@@ -1,0 +1,73 @@
+{
+  "common": {
+    "dashboard": "Панель управления",
+    "home": "Главная",
+    "settings": "Настройки",
+    "logout": "Выход",
+    "loading": "Загрузка...",
+    "save": "Сохранить изменения",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "view": "Просмотр",
+    "create": "Создать",
+    "search": "Поиск",
+    "search_placeholder": "Поиск...",
+    "actions": "Действия"
+  },
+  "menu": {
+    "home": "Главная",
+    "dashboard": "Панель управления",
+    "parts_management": "Управление запчастями",
+    "warehouses": "Склады",
+    "sections": "Секции",
+    "parts": "Запчасти",
+    "parts_catalog": "Каталог запчастей",
+    "inventory": "Инвентаризация",
+    "catalog": "Каталог",
+    "brands": "Бренды",
+    "part_groups": "Группы запчастей",
+    "part_subgroups": "Подгруппы запчастей",
+    "cars": "Автомобили",
+    "scanner": "Сканер",
+    "search_parts": "Поиск запчастей",
+    "low_stock": "Малый запас",
+    "admin": "Администрирование",
+    "users": "Пользователи",
+    "profile": "Профиль",
+    "search": "Поиск",
+    "part_details": "Детали запчасти",
+    "settings": "Настройки",
+    "company": "Компания",
+    "notification": "Уведомления",
+    "notification_alert": "Оповещения",
+    "theme": "Тема",
+    "currencies": "Валюты",
+    "languages": "Языки"
+  },
+  "actions": {
+    "add_warehouse": "Добавить склад",
+    "edit_warehouse": "Редактировать склад",
+    "delete_warehouse": "Удалить склад",
+    "add_section": "Добавить секцию",
+    "edit_section": "Редактировать секцию",
+    "delete_section": "Удалить секцию"
+  },
+  "labels": {
+    "warehouse_name": "Название склада",
+    "warehouse_code": "Код склада",
+    "warehouse_address": "Адрес склада",
+    "warehouse_manager": "Управляющий складом",
+    "section_name": "Название секции",
+    "section_code": "Код секции"
+  },
+  "errors": {
+    "not_found": "Не найдено",
+    "load_error": "Ошибка загрузки: {{error}}",
+    "save_error": "Ошибка сохранения: {{error}}",
+    "delete_error": "Ошибка удаления: {{error}}"
+  },
+  "confirmations": {
+    "delete": "Вы уверены, что хотите удалить?"
+  }
+}

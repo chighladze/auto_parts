@@ -1,0 +1,78 @@
+/* Base table styles */
+.table {
+  background-color: var(--table-bg);
+  color: var(--table-color);
+  border-color: var(--table-border-color);
+}
+
+/* Table elements */
+.table td,
+.table th,
+.table tr,
+.table tbody td,
+.table thead th,
+.table > tbody > tr > td,
+.table > thead > tr > th,
+.table > :not(caption) > * > * {
+  background-color: var(--table-bg) !important;
+  color: var(--table-color) !important;
+  border-color: var(--table-border-color);
+}
+
+/* Table header */
+.table thead th {
+  font-weight: 600;
+  border-bottom-width: 1px;
+}
+
+/* Striped rows */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--table-striped-bg) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--table-striped-bg) !important;
+  color: var(--table-striped-color) !important;
+}
+
+/* Hover effect */
+.table-hover > tbody > tr:hover > * {
+  background-color: var(--table-hover-bg) !important;
+  color: var(--table-hover-color) !important;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] .table {
+  --bs-table-color: var(--table-color);
+  --bs-table-bg: var(--table-bg);
+  --bs-table-border-color: var(--table-border-color);
+  --bs-table-striped-bg: var(--table-striped-bg);
+  --bs-table-striped-color: var(--table-striped-color);
+  --bs-table-hover-bg: var(--table-hover-bg);
+  --bs-table-hover-color: var(--table-hover-color);
+}
+
+/* Ensure text is visible in dark theme */
+[data-theme="dark"] .table td,
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table tr,
+[data-theme="dark"] .table thead th,
+[data-theme="dark"] .table tbody td {
+  color: var(--table-color) !important;
+}
+
+/* Links and buttons in table */
+[data-theme="dark"] .table a,
+[data-theme="dark"] .table .btn {
+  color: inherit !important;
+}
+
+/* Make sure borders are visible */
+[data-theme="dark"] .table,
+[data-theme="dark"] .table td,
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table thead th,
+[data-theme="dark"] .table-bordered,
+[data-theme="dark"] .table-bordered > :not(caption) > * > * {
+  border-color: var(--table-border-color) !important;
+}

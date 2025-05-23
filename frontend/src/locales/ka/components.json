@@ -1,0 +1,72 @@
+{
+  "dashboard": {
+    "title": "მართვის პანელი",
+    "overview": "მიმოხილვა",
+    "statistics": "სტატისტიკა",
+    "recent_orders": "ბოლო შეკვეთები",
+    "total_sales": "მთლიანი გაყიდვები",
+    "total_revenue": "მთლიანი შემოსავალი"
+  },
+  "parts": {
+    "title": "ავტონაწილები",
+    "add_part": "ნაწილის დამატება",
+    "edit_part": "ნაწილის რედაქტირება",
+    "delete_part": "ნაწილის წაშლა",
+    "part_details": "ნაწილის დეტალები",
+    "part_name": "ნაწილის სახელი",
+    "part_number": "ნაწილის ნომერი",
+    "manufacturer": "მწარმოებელი",
+    "category": "კატეგორია",
+    "price": "ფასი",
+    "quantity": "რაოდენობა",
+    "description": "აღწერა"
+  },
+  "common": {
+    "save": "შენახვა",
+    "cancel": "გაუქმება",
+    "delete": "წაშლა",
+    "edit": "რედაქტირება",
+    "view": "ნახვა",
+    "search": "ძებნა",
+    "actions": "მოქმედებები",
+    "no_data": "მონაცემები არ არის",
+    "loading": "იტვირთება...",
+    "success": "წარმატებული",
+    "error": "შეცდომა",
+    "confirm": "დადასტურება",
+    "back": "უკან"
+  },
+  "auth": {
+    "login": "შესვლა",
+    "logout": "გასვლა",
+    "register": "რეგისტრაცია",
+    "forgot_password": "დაგავიწყდათ პაროლი",
+    "email": "ელ.ფოსტა",
+    "password": "პაროლი",
+    "confirm_password": "პაროლის დადასტურება"
+  },
+  "navigation": {
+    "home": "მთავარი",
+    "dashboard": "მართვის პანელი",
+    "parts": "ნაწილები",
+    "inventory": "მარაგი",
+    "orders": "შეკვეთები",
+    "customers": "მომხმარებლები",
+    "suppliers": "მომწოდებლები",
+    "reports": "ანგარიშები",
+    "settings": "პარამეტრები",
+    "users": "მომხმარებლები",
+    "warehouses": "საწყობები",
+    "brands": "ბრენდები",
+    "categories": "კატეგორიები",
+    "profile": "პროფილი"
+  },
+  "settings": {
+    "title": "პარამეტრები",
+    "general": "ზოგადი პარამეტრები",
+    "profile": "პროფილის პარამეტრები",
+    "notifications": "შეტყობინებები",
+    "language": "ენა",
+    "theme": "თემა"
+  }
+}

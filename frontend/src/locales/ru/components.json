@@ -1,0 +1,72 @@
+{
+  "dashboard": {
+    "title": "Панель управления",
+    "overview": "Обзор",
+    "statistics": "Статистика",
+    "recent_orders": "Последние заказы",
+    "total_sales": "Общие продажи",
+    "total_revenue": "Общий доход"
+  },
+  "parts": {
+    "title": "Автозапчасти",
+    "add_part": "Добавить запчасть",
+    "edit_part": "Редактировать запчасть",
+    "delete_part": "Удалить запчасть",
+    "part_details": "Детали запчасти",
+    "part_name": "Название",
+    "part_number": "Номер запчасти",
+    "manufacturer": "Производитель",
+    "category": "Категория",
+    "price": "Цена",
+    "quantity": "Количество",
+    "description": "Описание"
+  },
+  "common": {
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "view": "Просмотр",
+    "search": "Поиск",
+    "actions": "Действия",
+    "no_data": "Данные отсутствуют",
+    "loading": "Загрузка...",
+    "success": "Успешно",
+    "error": "Ошибка",
+    "confirm": "Подтвердить",
+    "back": "Назад"
+  },
+  "auth": {
+    "login": "Вход",
+    "logout": "Выход",
+    "register": "Регистрация",
+    "forgot_password": "Забыли пароль",
+    "email": "Email",
+    "password": "Пароль",
+    "confirm_password": "Подтвердите пароль"
+  },
+  "navigation": {
+    "home": "Главная",
+    "dashboard": "Панель управления",
+    "parts": "Запчасти",
+    "inventory": "Склад",
+    "orders": "Заказы",
+    "customers": "Клиенты",
+    "suppliers": "Поставщики",
+    "reports": "Отчеты",
+    "settings": "Настройки",
+    "users": "Пользователи",
+    "warehouses": "Склады",
+    "brands": "Бренды",
+    "categories": "Категории",
+    "profile": "Профиль"
+  },
+  "settings": {
+    "title": "Настройки",
+    "general": "Общие настройки",
+    "profile": "Настройки профиля",
+    "notifications": "Уведомления",
+    "language": "Язык",
+    "theme": "Тема"
+  }
+}

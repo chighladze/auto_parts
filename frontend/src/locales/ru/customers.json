@@ -1,0 +1,50 @@
+{
+  "titles": {
+    "customers": "Клиенты",
+    "addCustomer": "Добавить клиента",
+    "editCustomer": "Редактировать клиента"
+  },
+  "fields": {
+    "name": "Имя",
+    "email": "Email",
+    "phone": "Телефон",
+    "address": "Адрес",
+    "taxNumber": "ИНН",
+    "companyName": "Название компании",
+    "isCompany": "Юридическое лицо",
+    "discountPercent": "Скидка %",
+    "creditLimit": "Кредитный лимит",
+    "search": "Поиск клиентов"
+  },
+  "buttons": {
+    "addCustomer": "Добавить клиента",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "create": "Создать",
+    "cancel": "Отмена"
+  },
+  "validation": {
+    "required": "Это поле обязательно",
+    "email": "Неверный формат email",
+    "min": "Значение должно быть больше {{value}}",
+    "max": "Значение должно быть меньше {{value}}"
+  },
+  "success": {
+    "customerCreated": "Клиент успешно создан",
+    "customerUpdated": "Данные клиента обновлены",
+    "customerDeleted": "Клиент удален"
+  },
+  "errors": {
+    "loadingCustomers": "Ошибка при загрузке клиентов",
+    "creatingCustomer": "Ошибка при создании клиента",
+    "updatingCustomer": "Ошибка при обновлении данных клиента",
+    "deletingCustomer": "Ошибка при удалении клиента"
+  },
+  "dialogs": {
+    "deleteCustomer": {
+      "title": "Удаление клиента",
+      "content": "Вы уверены, что хотите удалить этого клиента? Это действие нельзя отменить."
+    }
+  }
+}

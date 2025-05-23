@@ -1,0 +1,133 @@
+{
+  "common": {
+    "dashboard": "Панель управления",
+    "home": "Главная",
+    "settings": "Настройки",
+    "logout": "Выход",
+    "loading": "Загрузка...",
+    "loading_data": "Загрузка данных...",
+    "save": "Сохранить",
+    "saving": "Сохранение...",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "view": "Просмотр",
+    "create": "Создать",
+    "search": "Поиск",
+    "select_option": "Выберите...",
+    "search_placeholder": "Поиск по названию, артикулу или идентификатору...",
+    "actions": "Действия"
+  },
+  "menu": {
+    "home": "Главная",
+    "dashboard": "Панель управления",
+    "parts_management": "Управление запчастями",
+    "warehouses": "Склады",
+    "sections": "Секции",
+    "parts": "Запчасти",
+    "parts_catalog": "Каталог запчастей",
+    "inventory": "Инвентаризация",
+    "catalog": "Каталог",
+    "brands": "Бренды",
+    "part_groups": "Группы запчастей",
+    "part_subgroups": "Подгруппы запчастей",
+    "cars": "Автомобили",
+    "scanner": "Сканер",
+    "search_parts": "Поиск запчастей",
+    "low_stock": "Малый запас",
+    "admin": "Администрирование",
+    "users": "Пользователи",
+    "profile": "Профиль",
+    "search": "Поиск",
+    "part_details": "Детали запчасти",
+    "settings": "Настройки",
+    "company": "Компания",
+    "notification": "Уведомления",
+    "notification_alert": "Оповещения",
+    "theme": "Тема",
+    "currencies": "Валюты",
+    "languages": "Языки"
+  },
+  "actions": {
+    "add_warehouse": "Добавить склад",
+    "edit_warehouse": "Редактировать склад",
+    "delete_warehouse": "Удалить склад",
+    "add_section": "Добавить секцию",
+    "edit_section": "Редактировать секцию",
+    "delete_section": "Удалить секцию"
+  },
+  "labels": {
+    "warehouse_name": "Название склада",
+    "warehouse_code": "Код склада",
+    "warehouse_address": "Адрес склада",
+    "warehouse_manager": "Управляющий складом",
+    "section_name": "Название секции",
+    "section_code": "Код секции"
+  },
+  "errors": {
+    "not_found": "Не найдено",
+    "load_error": "Ошибка загрузки: {{error}}",
+    "save_error": "Ошибка сохранения: {{error}}",
+    "delete_error": "Ошибка удаления: {{error}}"
+  },
+  "confirmations": {
+    "delete": "Вы уверены, что хотите удалить?"
+  },
+  "stats": {
+    "total_parts": "Всего запчастей",
+    "in_stock": "В наличии",
+    "low_stock": "Малый запас",
+    "out_of_stock": "Нет в наличии"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "search": "Поиск",
+    "search_placeholder": "Поиск по названию, артикулу или идентификатору...",
+    "group": "Группа",
+    "all_groups": "Все группы",
+    "subgroup": "Подгруппа",
+    "all_subgroups": "Все подгруппы",
+    "stock": "Наличие",
+    "all": "Все",
+    "in_stock": "В наличии",
+    "out_stock": "Нет в наличии",
+    "low_stock": "Малый запас"
+  },
+  "quick_actions": {
+    "title": "Быстрые действия",
+    "add_part": "Добавить запчасть",
+    "import": "Импорт",
+    "export": "Экспорт",
+    "print": "Печать",
+    "scan": "Сканировать"
+  },
+  "features": {
+    "coming_soon": "Эта функция будет доступна в ближайшее время"
+  },
+  "pages": {
+    "parts": {
+      "title": "Каталог запчастей",
+      "add_part": "Добавить запчасть",
+      "edit_part": "Редактировать запчасть",
+      "name": "Название",
+      "article_number": "Артикул",
+      "description": "Описание",
+      "barcode": "Штрих-код",
+      "qr_code": "QR-код",
+      "text_identifier": "Текстовый идентификатор",
+      "group": "Группа",
+      "subgroup": "Подгруппа",
+      "min_quantity": "Минимальное количество",
+      "quantity": "Количество",
+      "identifiers": "Идентификаторы",
+      "no_parts": "Запчасти не найдены",
+      "load_error": "Ошибка при загрузке запчастей",
+      "save_error": "Ошибка при сохранении запчасти",
+      "delete_error": "Ошибка при удалении запчасти",
+      "create_success": "Запчасть успешно создана",
+      "update_success": "Запчасть успешно обновлена",
+      "delete_success": "Запчасть успешно удалена",
+      "name_required": "Название запчасти обязательно"
+    }
+  }
+}

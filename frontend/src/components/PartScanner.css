@@ -1,0 +1,124 @@
+.part-scanner {
+  width: 100%;
+  min-height: 400px;
+}
+
+.scanner-container {
+  position: relative;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.scanner-video {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.scanner-controls {
+  margin-bottom: 1rem;
+}
+
+.scanner-controls .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Основной контейнер для видео */
+#reader {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 300px !important;
+  background: #000;
+}
+
+/* Настройка видео элемента */
+#reader video {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1;
+}
+
+/* Область сканирования */
+#reader__scan_region {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 2 !important;
+}
+
+/* Рамка для сканирования */
+#reader__scan_region > svg {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 280px !important;
+  height: 280px !important;
+  z-index: 3 !important;
+}
+
+/* Скрываем ненужные элементы */
+#reader__dashboard_section_swaplink,
+#reader__dashboard_section_csr,
+#reader__status_span,
+#reader__camera_permission_button,
+#reader__header_message {
+  display: none !important;
+}
+
+/* Сообщение об отсутствии камеры */
+.no-camera-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 10;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+  .scanner-container {
+    height: 250px;
+  }
+
+  .scanner-video {
+    height: 250px;
+  }
+  
+  .scanner-controls .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #reader {
+    height: 250px !important;
+  }
+
+  #reader__scan_region > svg {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}

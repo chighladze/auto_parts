@@ -1,0 +1,72 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "overview": "Overview",
+    "statistics": "Statistics",
+    "recent_orders": "Recent Orders",
+    "total_sales": "Total Sales",
+    "total_revenue": "Total Revenue"
+  },
+  "parts": {
+    "title": "Auto Parts",
+    "add_part": "Add Part",
+    "edit_part": "Edit Part",
+    "delete_part": "Delete Part",
+    "part_details": "Part Details",
+    "part_name": "Part Name",
+    "part_number": "Part Number",
+    "manufacturer": "Manufacturer",
+    "category": "Category",
+    "price": "Price",
+    "quantity": "Quantity",
+    "description": "Description"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "actions": "Actions",
+    "no_data": "No data available",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error",
+    "confirm": "Confirm",
+    "back": "Back"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "forgot_password": "Forgot Password",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "parts": "Parts",
+    "inventory": "Inventory",
+    "orders": "Orders",
+    "customers": "Customers",
+    "suppliers": "Suppliers",
+    "reports": "Reports",
+    "settings": "Settings",
+    "users": "Users",
+    "warehouses": "Warehouses",
+    "brands": "Brands",
+    "categories": "Categories",
+    "profile": "Profile"
+  },
+  "settings": {
+    "title": "Settings",
+    "general": "General Settings",
+    "profile": "Profile Settings",
+    "notifications": "Notifications",
+    "language": "Language",
+    "theme": "Theme"
+  }
+}
