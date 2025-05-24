@@ -45,10 +45,13 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 
 
 def authenticate_user(db: Session, email: str, password: str):
+    print(f"Attempting authentication for email: {email}")
     user = db.query(UserModel).filter(UserModel.email == email).first()
     if not user:
+        print("User not found")
         return False
     if not verify_password(password, user.password):
+        print("Invalid password")
         return False
     return user
 

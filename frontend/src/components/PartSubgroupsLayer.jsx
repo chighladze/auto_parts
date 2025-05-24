@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   Button,
   Card,
@@ -27,7 +27,7 @@ const PartSubgroupsLayer = () => {
     group_id: "",
   });
 
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     try {
       const [groupsResponse, subgroupsResponse] = await Promise.all([
         PartGroupsApi.getAll(),
@@ -38,11 +38,11 @@ const PartSubgroupsLayer = () => {
     } catch (error) {
       toast.error(t("pages.part_subgroups.load_error"));
     }
-  };
+  }, [t]); // добавляем t в зависимости, так как он используется внутри функции
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [loadData]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

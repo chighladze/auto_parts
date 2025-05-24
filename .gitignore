@@ -47,6 +47,7 @@ build/
 *.db
 .env
 /frontend/.env
+/frontend/build 
 /backend/.env
 /backend/insert_data.xlsx
 /backend/error_rows.xlsx

@@ -1,22 +1,22 @@
-import api, { API_BASE_URL } from './api';
+import api, { API_BASE_URL } from "./api";
 
 const setAuthToken = (token) => {
   if (token) {
-    localStorage.setItem('token', token);
+    localStorage.setItem("token", token);
     api.defaults = api.defaults || {};
     api.defaults.headers = api.defaults.headers || {};
     api.defaults.headers.common = api.defaults.headers.common || {};
-    api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   } else {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     if (api.defaults?.headers?.common) {
-      delete api.defaults.headers.common['Authorization'];
+      delete api.defaults.headers.common["Authorization"];
     }
   }
 };
 
 const initializeAuth = () => {
-  const token = localStorage.getItem('token');
+  const token = localStorage.getItem("token");
   if (token) {
     setAuthToken(token);
     return true;
@@ -26,21 +26,23 @@ const initializeAuth = () => {
 
 const login = async (email, password) => {
   try {
+    console.log("Attempting login with:", { email });
     const formData = new URLSearchParams();
-    formData.append('username', email);
-    formData.append('password', password);
+    formData.append("username", email);
+    formData.append("password", password);
+    console.log("Form data:", formData.toString());
 
     const response = await fetch(`${API_BASE_URL}/auth/token`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        "Content-Type": "application/x-www-form-urlencoded",
       },
       body: formData,
     });
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => null);
-      throw new Error(errorData?.detail || 'Authentication failed');
+      throw new Error(errorData?.detail || "Authentication failed");
     }
 
     const data = await response.json();
@@ -50,7 +52,7 @@ const login = async (email, password) => {
     }
     return false;
   } catch (error) {
-    console.error('Login error:', error);
+    console.error("Login error:", error);
     throw error;
   }
 };
@@ -58,21 +60,21 @@ const login = async (email, password) => {
 const register = async (userData) => {
   try {
     const response = await fetch(`${API_BASE_URL}/auth/register`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(userData),
     });
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => null);
-      throw new Error(errorData?.detail || 'Registration failed');
+      throw new Error(errorData?.detail || "Registration failed");
     }
 
     return await response.json();
   } catch (error) {
-    console.error('Register error:', error);
+    console.error("Register error:", error);
     throw error;
   }
 };
@@ -81,18 +83,18 @@ const getCurrentUser = async () => {
   try {
     const response = await fetch(`${API_BASE_URL}/auth/me`, {
       headers: {
-        'Authorization': `Bearer ${localStorage.getItem('token')}`,
-        'Content-Type': 'application/json',
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "Content-Type": "application/json",
       },
     });
 
     if (!response.ok) {
-      throw new Error('Failed to get user data');
+      throw new Error("Failed to get user data");
     }
 
     return await response.json();
   } catch (error) {
-    console.error('Get current user error:', error);
+    console.error("Get current user error:", error);
     throw error;
   }
 };
@@ -116,7 +118,7 @@ const authService = {
   logout,
   getCurrentUser,
   initializeAuth,
-  isAdmin
+  isAdmin,
 };
 
 export default authService;
