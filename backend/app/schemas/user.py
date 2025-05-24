@@ -32,7 +32,7 @@ class User(UserBase):
     updated_at: datetime
 
     class Config:
-        from_attributes = True  # Обновленный параметр вместо orm_mode
+        from_attributes = True
 
 
 # Login schema
